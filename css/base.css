@@ -1,0 +1,252 @@
+﻿/*
+-----------------------------------------------
+Site Base Styles
+Author:   akella at http://cssing.org.ua
+Version:  1 sep 2009
+----------------------------------------------- */
+*{margin:0;padding:0}
+body{
+	font:13px Tahoma, sans-serif;
+	color:#000;
+	background:#e5e5e5;
+	}	
+/* =Misc(links)
+----------------------------------------------- */
+a img,fieldset{border:none}
+.pda, .print, legend{display:none}
+a{color:#008ae2}
+a:visited{color:#2787cc;}
+a:hover{color:#025189}
+
+/* Header----------------------------------------- */
+header{
+	height: 206px;
+	width:950px;
+	background:#e5e5e5;
+	border:10px solid #fff;
+	margin: 10px 15px 15px 15px;
+	}
+	.logo{
+		float:left;
+		width:360px;
+		height:95px;
+		padding:15px 10px;
+		}
+	.logo1{
+		float:left;
+		width:220px;
+		height:125px;
+		padding:0 25px;
+		}
+	.t-black{
+		float:left;
+		font:11px Tahoma, sans-serif;
+		width:300px;
+		margin-top:10px;
+		}
+	.t-black1{
+		margin:12px 3px;
+		}
+	.t-blue{
+		float:left;
+		font:11px Tahoma, sans-serif;
+		margin:8px 3px;
+		}
+	.t-blue1{
+		font:11px Tahoma, sans-serif;
+		float:right;
+		height:17px;		
+		padding: 3px 8px 0 0;		
+		}
+	.t-blue2{		
+		border-left: 1px solid #d4d6d7;
+		padding: 3px 8px 0 8px;	
+		}
+	.t-blue3{		
+		padding: 3px 0 0 8px;
+		}
+	.t-blue4{
+		font:11px Tahoma, sans-serif;
+		}
+	.t-blue5{
+		font:13px Tahoma, sans-serif;
+		}
+	.border{
+		float:left;
+		width:1px;
+		height:125px;
+		background: #fff;
+		}
+	.search{
+		float:left;
+		width:290px;
+		height:110px;
+		padding:15px 0 0 0;
+		}
+	.img{
+		margin:4px 5px 0 90px;
+		float:right;
+		}
+	.blok{
+		float:right;
+		width:270px;
+		height:30px;
+		margin: 15px 0 13px 0;
+		}
+	.bottom{
+		float:right;
+		width:43px;
+		height:19px;
+		padding: 8px 0 0 9px;
+		background: #C8281E;
+		font:11px Tahoma, sans-serif;
+		color: #fff;
+		border: 1px solid #C8281E;
+		}
+	.find{
+		float:right;
+		width:187px;
+		height:19px;
+		padding:8px 0 0 8px;
+		background: #fff;
+		font:12px Tahoma, sans-serif;
+		margin: 0 10px 0 0;
+		color: #999;
+		border: 1px inset #ECECEC;
+		box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+		}	
+/* Menu  ----------------------------------------------- */
+
+	.menu-up {
+		float:left;
+		height: 41px;		
+		background: #000; 
+		border-bottom: 5px solid #C8281E;
+		width: 100%;
+		font:12px Tahoma, sans-serif;
+		}
+	.menu-down{
+		float:left;
+		height: 36px;		
+		width: 100%;
+		font:12px Tahoma, sans-serif;
+		}
+		
+				.menu-up ul, .menu-up li, .menu-down  ul, .menu-down  li {
+					float: left;
+					list-style: none;   
+					}				
+				.menu-up li {
+					padding: 5px 0 0 0;
+					background: url(../img/separator.png) no-repeat 100% 50%;
+					}	
+				.menu-up li:last-child{
+					background: url(../img/separator.png) no-repeat 0% 50%;
+					margin-left: 135px;
+					}
+				.menu-up li  a{
+					float: left;
+					padding: 8px 10px 14px;
+					color:#fff;
+					text-decoration: none;
+					}	
+				.menu-up li  a:hover {
+					background: #bf090c;
+					}		
+				.menu-down  li {
+						background:url(../img/separator1.png) no-repeat 100% 50%;
+						}	
+					.menu-down  li  a{
+						float: left;
+						padding: 10px 10px 11px;
+						color:#C8281E;
+						text-decoration: none;
+						}	
+					.menu-down  li:last-child {
+						background: inherit; 
+						} 	
+					.menu-down  li  a:hover {								
+						color: #000;						
+						}		
+/* END   Menu----------------------------------- */	
+/* END   header--------------------------------- */	
+		
+/* content-------------------------------------- */
+.content{
+	float: left;
+	width: 627px;
+	background: #fff; 
+	border-right; 5px solid #e5e5e5;
+	margin: 0 0 0 15px;
+	padding: 0 10px;
+	}	
+	h1{
+		font-weight: 22px;
+		margin: 18px 0 0 0;		
+		}
+	h2{
+		font-weight: normal;
+		margin: 23px 20px 30px 0;		
+		font:18px Tahoma, sans-serif;
+		}
+	.line{
+		float: right;
+		width: 544px;
+		border-top: 1px solid #b7b7b7;
+		margin: 0 0 0 10px;
+		padding-top: 10px;
+		font:12px Tahoma, sans-serif;
+		}
+	.t-red{
+		color: #C8281E;
+		}
+	.t-red1{
+		color: #C8281E;
+		font:18px Tahoma, sans-serif;
+		font-weight: bold;
+		}
+	.t-grey{
+		color: #999;
+		}
+	.pill{
+		float: right;
+		margin: 0 0 20px 15px;
+		width: 240px;
+		font: 11px Tahoma, sans-serif;
+		}
+	.pill1{
+		padding: 10px 0;
+		border-bottom: 1px solid #d5d5d5;
+		}	
+	.pill2{
+		border-bottom: 5px solid #000;
+		padding: 10px 0 15px;
+		margin-bottom: 20px;
+		}	
+	.t-black2{
+		float:left;
+		font: bold 11px Tahoma, sans-serif;		
+		width: 105px;
+		margin-bottom: 10px;
+		}
+	p{
+		margin-bottom: 25px;
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+-------------------------------------------------------------------------------------------------		
+	
+		
+
+/* =Footer
+----------------------------------------------- */
+
+	
+/* END Footer
+----------------------------------------------- */
