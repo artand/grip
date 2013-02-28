@@ -8,14 +8,14 @@ Version:  1 sep 2009
 body{
 	font:13px Tahoma, sans-serif;
 	color:#000;
-	background:#e5e5e5;
-	
+	background:#fff;	
 	}	
 .site{
 	width:1000px;
 	margin:auto;
-	background:#e5e5a5;
-	padding: 10px 15px;
+	background:#e5e5e5;
+	padding-bottom: 20px;
+	overflow:hidden;
 	}
 /* =Misc(links)
 ----------------------------------------------- */
@@ -31,7 +31,13 @@ a:hover{color:#025189}
 	width:950px;
 	background:#e5e5e5;
 	border:10px solid #fff;
-	margin: 10px 15px 15px 15px;
+	margin: 0 15px 0 15px;
+	}
+.header-back{
+	background: url(../img/pic40.png) repeat 0% 0%;
+	height: 226px;
+	width:1000px;
+	margin: 10px 0 15px 0;
 	}
 	.logo{
 		float:left;
@@ -159,14 +165,13 @@ a:hover{color:#025189}
 		border-bottom: 5px solid #C8281E;
 		width: 100%;
 		font:12px Tahoma, sans-serif;
-		}
+		}				
 	.menu-down{
 		float:left;
 		height: 36px;		
 		width: 100%;
 		font:12px Tahoma, sans-serif;
 		}
-		
 		.menu-up ul, .menu-up li, .menu-down  ul, .menu-down  li {
 			float: left;
 			list-style: none;   
@@ -177,7 +182,10 @@ a:hover{color:#025189}
 			}	
 		.menu-up li:last-child{
 			background: url(../img/separator.png) no-repeat 0% 50%;
-			margin-left: 135px;
+			float: right;
+			}
+		.menu-up li a:last-child{
+			float: right;
 			}
 		.menu-up li  a{
 			float: left;
@@ -591,6 +599,7 @@ a:hover{color:#025189}
 					}	
 				.menu-right li:last-child{
 					padding: 8px 15px 6px 16px;
+					float: right;
 					}				
 				.menu-right li:hover {
 					background: #fff;
@@ -603,7 +612,7 @@ a:hover{color:#025189}
 					border-left: 1px solid #fff;
 					}
 				.menu-right li:last-child:hover{
-					border-right: 1px solid #fff;					
+					border-right: 1px solid #fff;			
 					border-left: 1px solid #d5d5d5;
 					}				
 			.right1-3{
@@ -700,6 +709,11 @@ a:hover{color:#025189}
 	background: #c8e1ed;
 	border: 10px solid #fff;
 	margin: 0 15px 0 15px;	
+	}	
+.footer-back{	
+	float: left;
+	width:1000px;
+	background: url(../img/pic41.png) repeat 0% 0%;
 	}	
 	.footer1{	
 		float: left;
