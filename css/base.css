@@ -159,11 +159,11 @@ a:hover{color:#025189}
 /* Menu  ----------------------------------------------- */
 
 	.menu-up {
-		float:left;
 		height: 41px;		
 		background: #000; 
 		border-bottom: 5px solid #C8281E;
 		width: 100%;
+		overflow: hidden;
 		font:12px Tahoma, sans-serif;
 		}				
 	.menu-down{
@@ -172,7 +172,7 @@ a:hover{color:#025189}
 		width: 100%;
 		font:12px Tahoma, sans-serif;
 		}
-		.menu-up ul, .menu-up li, .menu-down  ul, .menu-down  li {
+		.menu-up li, .menu-down  ul, .menu-down  li {
 			float: left;
 			list-style: none;   
 			}				
@@ -717,17 +717,20 @@ a:hover{color:#025189}
 	}	
 	.footer1{	
 		float: left;
-		width:300px;		
+		width:300px;
+		height: 115px;
 		padding: 10px 0 0 9px;
 		}	
 	.footer2{	
 		float: left;
 		width:357px;
+		height: 115px;
 		padding: 10px 0 0 27px;
 		}	
 	.footer3{	
 		float: left;
 		width:226px;
+		height: 115px;
 		padding: 10px 0 0 29px;
 		}
 	.border2{
