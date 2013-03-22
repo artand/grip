@@ -1,0 +1,773 @@
+﻿/*
+-----------------------------------------------
+Site Base Styles
+Author:   akella at http://cssing.org.ua
+Version:  1 sep 2009
+----------------------------------------------- */
+@import "variables";
+	
+
+*{margin:0;padding:0}
+body{
+	font:$font_13;
+	color:#000;
+	background:#fff;	
+	}	
+.site{
+	width:1000px;
+	margin:auto;
+	background:#e5e5e5;
+	padding-bottom: 20px;
+	overflow:hidden;
+	@include site_gradient;	
+	}
+/* =Misc(links)
+----------------------------------------------- */
+a img,fieldset{border:none}
+.pda, .print, legend{display:none}
+a{color:$linkcolor}
+a:visited{color:#2787cc;}
+a:hover{color:#025189}
+
+/* Header----------------------------------------- */
+.header{
+	height: 206px;
+	width:950px;	
+	border:10px solid #fff;
+	margin: 0 15px 0 15px;
+	@include header_gradient;
+	}
+.header-back{
+	background: url(../img/pic40.png) repeat 0% 0%;
+	height: 226px;
+	width:1000px;
+	margin: 10px 0 15px 0;
+	}
+	.logo{
+		float:left;
+		width:360px;
+		height:95px;
+		padding:15px 10px;
+		}
+	.logo1{
+		float:left;
+		width:220px;
+		height:125px;
+		padding:0 25px;
+		}
+	.t-black{
+		@include text(left, $font_11, #000);
+		width:300px;
+		margin-top:10px;
+		}
+	.t-black1{
+		margin:12px 3px;
+		}
+	.t-blue{
+		float:left;
+		font:$font_11;
+		margin:8px 3px;
+		}
+	
+	.t-blue4{
+		font:$font_11;
+		display:inline-block;
+		border-bottom:1px solid #fff;
+		box-shadow: inset 0 -1px 0 $linkcolor;
+		}
+	.t-blue5{
+		font:$font_13;
+		display:inline-block;
+		border-bottom:1px solid #fff;
+		box-shadow:0 1px 0 $linkcolor, inset 0 -1px 0 $linkcolor;
+		}
+	.header-link, .header-link1{
+		float:right;
+		height: 20px;		
+		width: 100%;		
+		ul, li{
+			float: right;
+			list-style: none;   
+		}
+			li{
+				font:$font_11;
+				height:17px;		
+				border-left: 1px solid #d4d6d7;
+				padding: 3px 8px 0 8px;					
+				a{color:$linkcolor;}
+			}
+				li:first-child{
+					padding: 3px 0 0 8px;
+				}
+					
+				li:last-child{
+					background: url(../img/pic3.jpg) no-repeat 0% 50%;
+					padding: 3px 8px 0 18px;
+					border: none;
+				}		
+	}
+		.header-link1 li:last-child{
+			background: none;
+			padding: 3px 8px 0 8px;
+			border: none;
+			}					
+	.border{
+		float:left;
+		width:1px;
+		height:125px;
+		background: #fff;
+		}
+	.search{
+		float:left;
+		width:290px;
+		height:110px;
+		padding:15px 0 0 0;
+		}
+	.img{
+		margin:4px 5px 0 90px;
+		float:right;
+		}
+	.blok{
+		float:right;
+		width:270px;
+		height:30px;
+		margin: 15px 0 13px 0;
+		}
+		.bottom{
+			float:right;
+			width:52px;
+			height:27px;
+			padding: 8px 0 0 9px;
+			font: $font_11;
+			color: #fff;
+			border: 1px solid $red;
+			padding: 0;
+			@include bottom_gradient;
+			}
+		.input{
+			float:right;
+			width:187px;
+			height:24px;
+			padding:3px 0 0 8px;
+			background: #fff;
+			font:$font_12;
+			margin: 0 10px 0 0;
+			color: $greylight;
+			border-right: 1px solid #ECECEC;
+			border-bottom: 1px solid #ECECEC;
+			border-top: 1px solid #bfbfbf;
+			border-left: 1px solid #bfbfbf;
+			box-shadow:inset 2px 2px 2px rgba(0,0,0,0.2);
+			}	
+/* Menu  ----------------------------------------------- */
+
+	.menu-up {
+		height: 41px;		
+		background: #000; 
+		border-bottom: 5px solid $red;
+		width: 100%;
+		overflow: hidden;
+		font:$font_12;
+		li{
+			float: left;
+			list-style: none;   
+			padding: 5px 0 0 0;
+			background: url(../img/separator.png) no-repeat 100% 50%;
+			a{
+				float: left;
+				padding: 8px 10px 14px;
+				color:#fff;
+				text-decoration: none;
+			}
+			a:hover {
+				@include red_gradient;
+			}
+		}	
+		li:last-child{
+			background: url(../img/separator.png) no-repeat 0% 50%;
+			float: right;
+			a:last-child{
+				float: right;
+			}
+		}
+	}
+	.menu-down{
+		float:left;
+		height: 36px;		
+		width: 100%;
+		font:$font_12;
+		ul, li{
+			float: left;
+			list-style: none;
+		}
+		li {
+			background:url(../img/separator1.png) no-repeat 100% 50%;
+			a{				
+				float: left;
+				padding: 10px 10px 11px;
+				color:$red;
+				text-decoration: none;
+			}
+			a:hover {								
+				color: #000;						
+			}			
+		}
+		li:last-child {
+			background: inherit; 
+		}		
+	}		
+/* END   Menu-----------------------------------*/	
+/* END   header--------------------------------- */	
+		
+/* content-------------------------------------- */
+/* left----------------------------------------- */	
+.content{
+	float: left;
+	width: 970px;
+	background: #fff; 
+	margin: 0 15px;	
+	}
+.left{
+	float: left;
+	width: 625px;
+	padding: 0 10px;
+	}
+	.content1{		
+		width: 100%;		
+		margin-bottom: 26px;
+		}	
+	.content2{		
+		width: 100%;		
+		margin-bottom: 26px;
+		border-bottom: 5px solid #000;
+		height: 86px;
+		}	
+	.content3{		
+		width: 100%;
+		height: 38px;
+		margin-bottom: 17px;
+		border: 1px solid $grey;
+		@include content3_gradient;
+		}	
+	.content4{		
+		width: 100%;		
+		margin-bottom: 26px;
+		}	
+	h1{
+		font-weight: 22px;
+		margin: 18px 0 0 0;		
+		}
+	h2{
+		margin: 23px 20px 30px 0;		
+		font: normal $font_18;
+		}
+	.line{
+		float: right;
+		width: 538px;
+		border-top: 1px solid #b7b7b7;
+		margin: 0 0 0 10px;
+		padding-top: 10px;
+		font:$font_12;
+		}
+	.t-red{
+		color: $red;
+		}
+	.t-red1{
+		color: $red;
+		font:bold $font_18;
+		}
+	.t-grey{
+		color: $greylight;
+		}
+	.pic{
+		float: right;
+		margin: 0 0 20px 15px;
+		width: 240px;
+		font: $font_11;
+		}
+	.pic1{
+		padding: 10px 0;
+		border-bottom: 1px solid $grey;
+		}	
+	.pic2{
+		border-bottom: 5px solid #000;
+		padding: 10px 0 15px;
+		margin-bottom: 20px;
+		}	
+	.t-black2{
+		float:left;
+		font: bold $font_11;		
+		width: 105px;
+		margin-bottom: 10px;
+		}
+	p{
+		margin-bottom: 25px;
+		}
+	.t-grey1{
+		@include text(left, $font_11, $greylight);
+		margin: 12px 15px;		
+		}
+	.t-grey2{
+		@include text(right, $font_11,$greylight);
+		margin: 12px 0;		
+		}
+	.t-grey3{
+		@include text(left, $font_12, $greylight);
+		margin: 0 6px 0 0;		
+		}
+	.t-blue6{
+		@include text(left, $font_12, $linkcolor);
+		margin: 0 12px 0 0;		
+		}
+	.img1{
+		margin:12px 15px 0 0;
+		float:left;
+		}
+	.img2{
+		margin:8px 9px;
+		float:right;
+		}
+	.border1{
+		float:left;
+		width:1px;
+		height:38px;
+		border-left: 1px solid #fff;
+		@include border1_gradient;
+		}
+	.t-black3{
+		@include text(right, $font_11, #000);
+		margin-top:10px;
+		}
+	
+/* comment-------------------------------------- */
+	h3{		
+		font:bold $font_18;
+		margin:0 0 10px 0;
+		}
+	.comment{		
+		width: 100%;		
+		margin-bottom: 34px;
+		}
+	.comment1{
+		float: right;
+		width: 560px;
+		}
+	.comment2{		
+		width: 100%;		
+		margin-bottom: 21px;
+		}
+	.comment3{		
+		width: 100%;		
+		margin: 0;
+		border-top: 1px solid #b7b7b7;
+		}
+	.t-grey4{
+		@include text(left, $font_12, $greylight);
+		margin-left: 8px;		
+		}
+	.t-black4{
+		@include text(left, $font_12, #000);
+		margin-top:15px;
+		}
+	.t-red2{
+		@include text(left, $font_12, $red);
+		background: url(../img/pic9.jpg) no-repeat 0% 50%;
+		margin:0;
+		padding: 15px 20px;
+		}
+/*  -------------------------------------- */
+	.content5{	
+		float:left;
+		width: 100%;
+		height: 80px;
+		margin:0 0 25px 0;
+		border-top: 5px solid #000;
+		border-bottom: 5px solid #000;
+		}
+	h4{		
+		font:bold $font_18;
+		margin:19px 0;
+		padding: 10px;
+		border: 1px solid $grey;
+		background: url(../img/pic24.jpg) no-repeat 98% 50%;
+		}
+/* theme -------------------------------------- */
+	h5{
+		float: left;
+		font:bold $font_18;
+		margin:0 0 15px 0;
+		}		
+	.content6{
+		float:left;
+		width: 100%;
+		margin:0 0 15px 0;
+		}
+		.t-blue7{
+			@include text(left, $font_12, $linkcolor);
+			margin: 0;	
+			padding: 0 0 0 17px;
+			background: url(../img/pic29.jpg) no-repeat 0 50%;
+			}
+		.t-blue8{
+			background: url(../img/pic30.jpg) no-repeat 0 50%;
+			}
+		.t-grey5{
+			@include text(left, $font_12, $greylight);
+			margin-left: 5px;			
+			}
+		.t-black5{
+			@include text(left, $font_12, #000);
+			margin-left: 10px;	
+			padding:0 0 0 18px;
+			background: url(../img/pic9.jpg) no-repeat 0 70%;
+			}
+/* END left------------------------------------- */	
+/*  right--------------------------------------- */	
+		
+
+.border4{
+	float: left;
+	width: 5px;
+	height: 3000px;
+	@include border4_gradient;
+	}
+.right{
+	float: right;
+	width: 300px;
+	padding: 0 10px;
+	}
+	.baner{
+		float: left;
+		width: 240px;
+		height: 376px;
+		margin: 10px 30px;
+		}
+		.baner1{
+			float: left;
+			width: 240px;
+			height: 350px;
+			background: url(../img/pic7.jpg) no-repeat 0% 0%;
+			}
+		a.t-grey6{
+			@include text(left, $font_12, $greylight);
+			margin: 0px 0 0 0;	
+			}
+	.right1{
+		float: left;
+		width: 300px;
+		border-top: 1px solid $grey;
+		border-left: 1px solid $grey;
+		border-right: 1px solid $grey;
+		margin: 0 0 20px 0;
+		}
+		.h8{
+			float: left;
+			width: 280px;
+			height: 20px;
+			font: bold $font_18;
+			padding: 9px 10px;
+			border-bottom: 1px solid $grey;
+			}
+			.img5{
+				float: right;
+				width: 47px;
+				height: 22px;
+				background: url(../img/pic8.jpg) no-repeat 0% 50%;
+				}
+		.right1-1{
+			float: left;
+			width: 300px;
+			border-bottom: 1px solid $grey;
+			}
+			.img6{
+				float: left;
+				width: 106px;
+				height: 70px;
+				background: url(../img/pic10.jpg) no-repeat 0% 50%;
+				border: 1px solid $grey;
+				margin: 10px 0 10px 10px;
+				}
+			.img6-1{
+				background: url(../img/pic11.jpg) no-repeat 0% 50%;
+				}
+			.img6-2{
+				background: url(../img/pic15.jpg) no-repeat 0% 50%;
+				}
+			.img6-3{
+				background: url(../img/pic16.jpg) no-repeat 0% 50%;
+				}
+			.img6-4{
+				background: url(../img/pic17.jpg) no-repeat 0% 50%;
+				}
+			.img6-5{
+				background: url(../img/pic18.jpg) no-repeat 0% 50%;
+				}
+			.t-blue10{
+				@include text(left, $font_12, $blue);
+				margin: 10px 0 10px 15px;
+				width: 160px;
+				}
+			.t-blue11{
+				@include text(left, $font_12, $blue);
+				margin: 8px 0 6px 10px;
+				width: 280px;
+				}
+			.t-blue12{
+				@include text(left, $font_12, $blue);				
+				width: 280px;
+				border-bottom: 1px solid $grey;				
+				padding: 10px;
+				}
+			.t-grey7{
+				@include text(left, $font_11, $greylight);				
+				margin: 0 0 10px 15px;		
+				}
+			.t-grey8{
+				@include text(left, $font_11, $greylight);				
+				margin: 0 0 10px 10px;		
+				}
+			.t-black10{
+				@include text(left, $font_12, #000);
+				width: 120px;				
+				background: url(../img/pic9.jpg) no-repeat 0% 50%;
+				padding: 0 0 0 18px;
+				margin: 0 0 0 15px;
+				}
+			.right1-2{
+				float: left;
+				width: 300px;
+				border-bottom: 1px solid $grey;
+				@include red_gradient;
+				}
+				.t-white2{
+					@include text(left, $font_12, #fff);
+					margin: 10px;
+					padding: 0 0 0 20px;
+					background: url(../img/pic12.jpg) no-repeat 0% 50%;
+					}
+			.menu-right {
+				float:left;
+				height: 27px;		
+				background: $light; 
+				border-bottom: 1px solid $grey;
+				width: 100%;
+				font:$font_11;
+				}
+				.menu-right ul, .menu-right li{
+					float: left;
+					list-style: none;   
+					}				
+				.menu-right li {
+					float: left;
+					padding: 8px 16px 6px 14px;
+					color: #000;
+					border-right: 1px solid $light;
+					border-left: 1px solid $light;
+					border-bottom: 1px solid $grey;
+					}
+				.menu-right li:first-child{
+					padding: 8px 16px 6px 16px;
+					}	
+				.menu-right li:last-child{
+					padding: 8px 15px 6px 16px;
+					float: right;
+					}				
+				.menu-right li:hover {
+					background: #fff;
+					border-right: 1px solid $grey;
+					border-left: 1px solid $grey;
+					border-bottom: 1px solid #fff;
+					}	
+				.menu-right li:first-child:hover{
+					border-right: 1px solid $grey;
+					border-left: 1px solid #fff;
+					}
+				.menu-right li:last-child:hover{
+					border-right: 1px solid #fff;			
+					border-left: 1px solid $grey;
+					}				
+			.right1-3{
+				float: left;
+				width: 300px;
+				border-bottom: 1px solid $grey;
+				}
+			.right1-4{
+				float: left;
+				width: 300px;
+				border-bottom: 1px solid $grey;
+				}
+				.t-red3{
+					@include text(left, $font_12, $red);
+					margin: 10px;
+					padding: 0 0 0 20px;
+					background: url(../img/pic19.jpg) no-repeat 0% 50%;
+					}
+	.right2{
+		float: left;
+		width: 300px;
+		border-top: 1px solid $grey;
+		border-left: 1px solid $grey;
+		border-right: 1px solid $grey;
+		margin: 0 0 20px 0;
+		background: #F4F3E5;
+		}		
+
+/* END content
+----------------------------------------------- */	
+			
+/* Footer
+----------------------------------------------- */
+.reference{	
+	float: left;
+	width:950px;
+	height: 180px;
+	background: #fff;
+	border: 10px solid #fff;
+	margin: 10px 15px 0 15px;
+	}
+	.reference1{	
+		float: left;
+		height: 180px;
+		width: 165px;
+		background: #fff;
+		margin:0 31px 0 0;
+		}		
+	.reference2{	
+		margin:0;
+		}		
+	h6{
+		float: left;
+		font: bold $font_18;
+		margin:23px 0 20px 0;
+		}	
+		
+/* ----------------------------------------------- */		
+.menu-footer{	
+	float: left;
+	width:970px;
+	height: 51px;
+	font:$font_12;
+	margin: 0 15px;
+	ul, li {
+		float: left;
+		list-style: none;   
+	}	
+	li {
+		padding: 21px 10px;
+		a{
+			float: left;
+			padding: 0;
+			color:#000;
+			text-decoration: none;
+		}
+		a:hover {
+			color: $red;
+		}		
+	}				
+	li.border3 {					
+		width: 1px;
+		height: 31px;
+		background: #b7b7b7;
+		margin: 10px 1px;
+		padding: 0;
+	}
+}
+.footer{	
+	float: left;
+	width:950px;
+	border: 10px solid #fff;
+	margin: 0 15px 0 15px;
+	@include footer_gradient;
+	}	
+.footer-back{	
+	float: left;
+	width:1000px;
+	background: url(../img/pic41.png) repeat 0% 0%;
+	}	
+	.footer1{	
+		float: left;
+		width:300px;
+		height: 115px;
+		padding: 10px 0 0 9px;
+		}	
+	.footer2{	
+		float: left;
+		width:357px;
+		height: 115px;
+		padding: 10px 0 0 27px;
+		}	
+	.footer3{	
+		float: left;
+		width:226px;
+		height: 115px;
+		padding: 10px 0 0 29px;
+		}
+	.border2{
+		float:left;
+		width:1px;
+		height:124px;
+		background: #fff;
+		margin-top: 1px;
+		}
+	.h7{
+		font: $font_18;
+		}
+	.t-black6{
+		@include text(left, $font_11, #000);
+		margin:8px 0 3px 0;
+		}
+	.t-blue9{
+		@include text(left, $font_11, $blue);
+		width: 100%;
+		}
+	.t-black7{
+		@include text(left, $font_11, #000);
+		margin: 0 0 29px 0;
+		}
+	.t-black8{
+		font:$font_11;
+		text-decoration: underline;
+		color: #000;
+		}	
+	.t-black9{
+		@include text(left, $font_12, #000);
+		text-decoration: underline;
+		margin: 0 0 14px 0;
+		}
+/* ----------------------------------------------- */	
+	.footer4{
+		float: left;
+		width:950px;
+		background: #000;
+		height: 41px;
+		}
+		.img3{
+			float: left;
+			width: 130px;
+			height: 41px;
+			background: url(../img/pic38.jpg) no-repeat 0% 50%;
+			}
+		.img4{
+			float: right;
+			width: 80px;
+			height: 41px;
+			background: url(../img/pic39.jpg) no-repeat 0% 50%;
+			}
+		.t-white{
+			@include text(left, $font_12, $light);
+			border-right: 1px solid #333;
+			height: 21px;
+			margin: 5px 0 0 0;
+			padding: 10px 18px 0 18px;
+			}
+		.t-white1{
+			@include text(left, $font_18, $light);
+			border-right: 1px solid #333;
+			height: 26px;
+			margin: 5px 0 0 0;
+			padding: 5px 12px 0 12px;
+			}
+	
+	
+/* END Footer
+----------------------------------------------- */
