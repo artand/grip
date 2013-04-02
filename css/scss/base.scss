@@ -1,4 +1,4 @@
-﻿/*
+/*
 -----------------------------------------------
 Site Base Styles
 Author:   akella at http://cssing.org.ua
@@ -469,11 +469,23 @@ a:hover{color:#025189}
 			border-bottom: 1px solid $grey;
 			}
 			.img5{
-				float: right;
-				width: 47px;
+				float: right;				
 				height: 22px;
-				background: url(../img/pic8.jpg) no-repeat 0% 50%;
+				width: 47px;				
 				}
+				.img5-1{			
+					float: right;				
+					height: 22px;
+					width: 22px;
+					background: url(../img/pic24.jpg) no-repeat 0% 50%;
+					}
+				.img5-2{
+					height: 22px;
+					width: 22px;				
+					width: 22px;				
+					background: url(../img/pic8.jpg) no-repeat 0% 50%;
+					margin: 0 3px 0 0;
+					}
 		.right1-1{
 			float: left;
 			width: 300px;
@@ -537,13 +549,13 @@ a:hover{color:#025189}
 				float: left;
 				width: 300px;
 				border-bottom: 1px solid $grey;
-				@include red_gradient;
+				@include red1_gradient;
 				}
 				.t-white2{
 					@include text(left, $font_12, #fff);
 					margin: 10px;
 					padding: 0 0 0 20px;
-					background: url(../img/pic12.jpg) no-repeat 0% 50%;
+					background: url(../img/pic12.png) no-repeat 0% 50%;
 					}
 			.menu-right {
 				float:left;
@@ -553,25 +565,20 @@ a:hover{color:#025189}
 				width: 100%;
 				font:$font_11;
 				}
-				.menu-right ul, .menu-right li{
+				.menu-right ul{
+					width: 100%;
 					float: left;
-					list-style: none;   
+					list-style: none;			
 					}				
 				.menu-right li {
 					float: left;
-					padding: 8px 16px 6px 14px;
+					width: 98px;
+					text-align: center;
+					padding: 7px 0;
 					color: #000;
 					border-right: 1px solid $light;
-					border-left: 1px solid $light;
-					border-bottom: 1px solid $grey;
+					border-left: 1px solid $light;					
 					}
-				.menu-right li:first-child{
-					padding: 8px 16px 6px 16px;
-					}	
-				.menu-right li:last-child{
-					padding: 8px 15px 6px 16px;
-					float: right;
-					}				
 				.menu-right li:hover {
 					background: #fff;
 					border-right: 1px solid $grey;
@@ -600,7 +607,7 @@ a:hover{color:#025189}
 					@include text(left, $font_12, $red);
 					margin: 10px;
 					padding: 0 0 0 20px;
-					background: url(../img/pic19.jpg) no-repeat 0% 50%;
+					background: url(../img/pic19.png) no-repeat 0% 50%;
 					}
 	.right2{
 		float: left;
